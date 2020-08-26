@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Bowlby+One+SC');
+*{margin:0;padding:0;}
+section{width:100%;}
+#banner{margin-top:50px;position:relative;display:flex;flex-wrap:wrap;height:94vh;overflow:hidden;}
+#banner img{width:100%;height:100%;object-fit:cover;}
+#banner .compact{position: absolute;top:0;left:0;width:100%;height:100%;padding:2em;display:flex;flex-wrap:wrap;justify-content:space-between;}
+#banner .compact .name, #banner .compact p{width:100%;max-width: 340px;}
+#banner .compact h2{display:inline-block;font-size:2.3em;font-family:'Archivo Black',sans-serif;color:#5;background:#5466A1;line-height:1.1em;margin-bottom: 0.2em;color:#FAFC51;padding:0px 0.2em;box-shadow:0px 0px 8px #FFFF4B;}
+#banner .compact p{max-width: 480px;font-family:'Bowlby One SC';text-shadow:0px 0px 8px #FFFF4B;font-size:1.6em;text-align:right;line-height:1.5em;color:#57639B;}
+@media screen and (max-width:1250px){#banner .compact .name, #banner .compact p{max-width:100%;}
+#banner .compact p{text-shadow:0px 0px 12px #FFF;}}
+@media screen and (max-width:420px){#banner .compact h2{font-size:1.9em;}
+#banner .compact p{font-size:1.2em;}
+}
+@media screen and (max-width:340px){#banner .compact h2{font-size:1.6em;}
+#banner .compact p{font-size:1em;}
+}

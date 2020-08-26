@@ -1,0 +1,56 @@
+.cabecera{margin-top:50px;width:100%;height:200px;background:rgba(100,190,187,1);background:-moz-linear-gradient(left, rgba(100,190,187,1) 0%, rgba(105,191,169,1) 25%, rgba(108,191,158,1) 49%, rgba(113,192,143,1) 63%, rgba(125,195,104,1) 93%, rgba(125,195,104,1) 100%);background:-webkit-gradient(left top, right top, color-stop(0%, rgba(100,190,187,1)), color-stop(25%, rgba(105,191,169,1)), color-stop(49%, rgba(108,191,158,1)), color-stop(63%, rgba(113,192,143,1)), color-stop(93%, rgba(125,195,104,1)), color-stop(100%, rgba(125,195,104,1)));background:-webkit-linear-gradient(left, rgba(100,190,187,1) 0%, rgba(105,191,169,1) 25%, rgba(108,191,158,1) 49%, rgba(113,192,143,1) 63%, rgba(125,195,104,1) 93%, rgba(125,195,104,1) 100%);background:-o-linear-gradient(left, rgba(100,190,187,1) 0%, rgba(105,191,169,1) 25%, rgba(108,191,158,1) 49%, rgba(113,192,143,1) 63%, rgba(125,195,104,1) 93%, rgba(125,195,104,1) 100%);background:-ms-linear-gradient(left, rgba(100,190,187,1) 0%, rgba(105,191,169,1) 25%, rgba(108,191,158,1) 49%, rgba(113,192,143,1) 63%, rgba(125,195,104,1) 93%, rgba(125,195,104,1) 100%);background:linear-gradient(to right, rgba(100,190,187,1) 0%, rgba(105,191,169,1) 25%, rgba(108,191,158,1) 49%, rgba(113,192,143,1) 63%, rgba(125,195,104,1) 93%, rgba(125,195,104,1) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#64bebb', endColorstr='#7dc368', GradientType=1);}
+.cabecera .inside{margin:auto;width:100%;height:100%;max-width:1200px;display:flex;flex-wrap:wrap;}
+.cabecera .left, .cabecera .midle, .cabecera .right{width:33.33%;height:100%;position:relative;}
+.cabecera .left h2{line-height:200px;font-size:50px;}
+.cabecera .left h2, .cabecera .right p{padding-left:10px;padding-right:10px;font-family:sans-serif;color:#fff;}
+.cabecera .midle img, .cabecera .right .texto{position:absolute;top:50%;transform:translateY(-50%);}
+.cabecera .midle img{width:70px;left:50%;transform:translateX(-50%) translateY(-50%);}
+.cabecera .right .texto{width:100%;}
+.cabecera .right .texto p{float:right;}
+.cabecera .right p a{text-decoration:none;font-family:sans-serif;color:#fff;}
+.cabecera .right p a:hover{text-decoration:underline;}
+#contenido{width:100%;height:auto;display:flex;}
+.imagen, .info{height:auto;width:50%;}
+.imagen{overflow:hidden;background-image:url(../../imagenes/Proyectos/profesor_de_escuela.jpg);background-repeat:no-repeat;background-size:50%;background-position:0px -130px;background-attachment:fixed;}
+.info .dentro{margin-top:40px;padding:30px;}
+.info .dentro h3{max-width:60%;margin:auto;font-weight:500;font-size:32px;text-align:center;}
+.info .dentro h3, .info .dentro h4{width:100%;font-weight:lighter;text-align:center;margin-bottom:20px;color:#443846;}
+.info .dentro h4{font-size:18px;}
+.info .dentro .texto, #disqus_thread{padding-left:50px;padding-right:50px;}
+.info .dentro .texto, #disqus_thread{padding-left:50px;padding-right:50px;}
+.info .dentro .texto p{font-size:16px;line-height:22px;margin-bottom:10px;font-weight:100;color:#7D6D67;}
+.info .dentro .texto p.last{padding-bottom:20px;border-bottom:1px solid #E0E0E0;}
+#disqus_thread{width: 100%;}
+@media screen and (max-width:1211px){.cabecera .left{display:none;}
+.cabecera .midle img{transform:translateX(-50%) translateY(0%);}
+.cabecera .midle, .cabecera .right{width:100%;height:50%;}
+.cabecera .right .texto p{float:none;text-align:center;}
+.imagen{display:none;}
+.info{width:80%;margin:auto;}
+}
+@media screen and (max-width:768px){.info .dentro h3{max-width:90%;}
+.info .dentro .texto, #disqus_thread{padding-left:10px;padding-right:10px;}
+}
+@media screen and (max-width:640px){.info{width:90%; color:#000;}
+.info .dentro h3{font-size:28px;}
+.info .dentro h4{font-size:16.5px;}
+.info .dentro .texto p{font-size:15px;color:#000;}
+}
+@media screen and (max-width:480px){.cabecera{height:90px;}
+.cabecera .midle{display:none;}
+.cabecera .right .texto{position:absolute;transform:translateY(80%);}
+.info .dentro{margin-top:30px;padding:25px;}
+}
+@media screen and (max-width:386px){.cabecera{margin-top:40px;}
+.cabecera .right .texto p{font-size:14px;}
+}
+@media screen and (max-width:350px){.info{width:100%;}
+.info .dentro{padding:20px;}
+.info .dentro h3{font-size:20px;}
+.info .dentro h4{font-size:15px;}
+.info .dentro .texto p{font-size:14px;line-height:20px;}
+}
+@media screen and (max-width:320px){.info .dentro{padding:15px;}
+}
+@media screen and (max-width:310px){.cabecera .right .texto{position:absolute;transform:translateY(30%);}
+}

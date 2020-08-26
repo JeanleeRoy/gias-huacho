@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+article{
+    max-width: 1200px;
+    margin: auto;
+}
+
+h3{
+    padding: 25px 30px;
+    box-sizing: border-box;
+    max-width: 1200px;    
+    margin: auto;
+    width: 100%;
+    color: #fff;
+    font-size: 35px;
+    color: #443846;
+}
+.mapa{
+    padding: 10px;
+    height: 450px;
+}
+.contenido{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenido .left {
+    width: 30%;
+    padding: 30px;
+}
+.contenido .right{
+    width: 70%;
+}
+.contenido .left .texto h4{
+    font-size: 20px;
+    color: #443846;
+}
+.contenido .left .texto p, .contenido .left .texto p a{
+    font-size: 18px;
+    font-weight: 100;
+    color: #7D6D67;
+    text-decoration: none;
+}
+.contenido .left .texto p{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.contenido .left .texto p .icon{
+    color: #0099ff;
+}
+.contenido .left .texto p a{
+    transition: all ease .3s;
+}
+.contenido .left .texto p a:hover{
+    color: #0099ff;
+}
+.contenido .right{
+    padding-top: 18px;
+}
+.formulario {
+    max-width: 700px;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.formulario h5{
+    font-family: sans-serif;
+    font-size: 20px;
+    border-bottom: 25px solid #fff;
+    color: #443846;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+form, .formulario h5{
+    width: 95%;
+    margin: auto;
+}
+form input, form textarea{
+    font-family: sans-serif;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid #5BBDFF;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-size: 16px;
+}
+form textarea{
+    max-width: 100%;
+    max-height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+form input:focus, form textarea:focus{
+    outline:0px;
+}
+form #submit{
+    width: 100px;
+    margin: auto;
+    padding: inherit;
+    color: #0099ff;
+    background-color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid;
+    transition: all ease .5s;
+    margin-bottom: 15px;
+}
+form #submit:hover{
+    color: #fff;
+    background-color: #0099ff;
+    border: 2px solid #0099ff;
+}
+@media screen and (max-width:868px){
+    .contenido .left, .contenido .right {
+        width: 100%;
+    }
+    .contenido .left{
+        padding-bottom: 5px;
+    }
+}
+@media screen and (max-width:640px){
+    h3{
+        font-size: 28px;
+    }
+    .contenido .left{
+        padding-bottom: 0px;
+    }
+    .contenido .left .texto h4, .formulario h5{
+        font-size: 18px;
+    }
+    .contenido .left .texto p, .contenido .left .texto p a{
+        font-size: 16px;
+    }
+    form input{
+        font-size: 15px;
+        height: 35px;
+    }
+    form input, form textarea{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:350px){
+    h3{
+        font-size: 20px;
+    }
+    .mapa{
+        height: 300px;
+    }
+    .contenido .left .texto h4, .formulario h5{
+        font-size: 15px;
+    }
+    .contenido .left .texto p, .contenido .left .texto p a{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    form input, form textarea{
+        font-size: 13px;
+    }
+}

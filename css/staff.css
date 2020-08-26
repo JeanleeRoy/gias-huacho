@@ -1,0 +1,33 @@
+.staff{max-width:890px;width:inherit;margin:auto;margin-top:50px;}
+.staff h4{width:100%;height:40px;line-height:40px;text-align:center;font-size:37px;margin-bottom:20px;font-weight:bold;color:#0083DA;}
+.staff .dentro{width:100%;height:100%;display:flex;}
+.staff .dentro .block{width:270px;height:350px;margin:10px 10px;overflow:hidden;position:relative;}
+.staff .dentro .block .img{height:300px;width:100%;position:relative;}
+.block .img img{position:absolute;height:300px;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);transition:.5s ease;}
+.staff .dentro .block .enlace{width:100%;height:100%;}
+.block .enlace .link{position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-100%);display:flex;}
+.enlace .link a{box-sizing:border-box;padding:11px;width:50px;height:50px;background-color:#666666;text-decoration:none;color:#fff;border-radius:50%;font-size:30px;margin:auto 5px;text-align:center;transition:.6s ease;transform:translateY(-300px);opacity:0;}
+.block:hover .img img{opacity:0.4;}
+.block:hover .enlace .link a{transform:translateY(0px);opacity:1;}
+.enlace .link .icon-facebook:hover{background-color:#3b5998;}
+.enlace .link .icon-google-plus:hover{background-color:#dd4b39;}
+.enlace .link .icon-twitter:hover{background-color:#55acee;}
+.block .name{width:100%;height:50px;}
+.block .name p{width:100%;height:50%;text-align:center;font-size:15px;color:#CBCBCB;line-height:40px;}
+.block .name p span{font-size:20px;color:#00546F;transition:all .5s ease;}
+.block .name p span:hover{color:#00A4D9;}
+@media screen and (max-width:768px){.staff{max-width:600px;}
+.staff .dentro{display:flex;flex-wrap:wrap;}
+.staff .dentro .block{width:600px;}
+}
+@media screen and (max-width:570px){.staff{max-width:450px;}
+.staff .dentro .block{width:450px;}
+}
+@media screen and (max-width:480px){.staff{max-width:350px;}
+.staff .dentro .block{width:350px;}
+.staff h4{font-size:32px;}
+}
+@media screen and (max-width:320px){.staff{max-width:250px;}
+.staff .dentro .block{width:250px;}
+.staff h4{font-size:25px;}
+}

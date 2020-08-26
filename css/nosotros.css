@@ -1,0 +1,106 @@
+*{margin:0;padding:0;}
+body{font-family:sans-serif;}
+#cuerpo{margin:auto;}
+.who{width:100%;height:400px;display:flex;justify-content:flex-start;}
+.who .img{width:50%;height:100%;position:relative;}
+.who .img img{position:absolute;width:100%;height:100%;}
+.who .p{width:50%;height:100%;}
+.who .p .texto{padding:35px;}
+.texto h3{font-size:25px;color:#443846;}
+.texto .line, .mision .inside .line{font-size:30px;line-height:10px;margin-top:-15px;margin-bottom:20px;color:rgb(0,153,255);}
+.texto p{font-size:15px;color:#8F7D76;}
+.join{width:100%;height:300px;background-image:url(../imagenes/nosotros/line.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;}
+.join .inside{position:relative;width:100%;height:100%;background-color:rgba(255,255,255,0.4)}
+.join .inside .words{width:80%;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);}
+.join .inside .words p{font-size:50px;font-weight:bold;color:#2A2A2A;margin-bottom:30px;}
+.join .inside .words a{text-decoration:none;padding:10px 25px;color:#fff;border:3px solid #fff;transition:all .5s ease;}
+.join .inside .words a:hover{background-color:rgba(0,154,255,0.5);}
+.numbers{width:100%;height:300px;background-color:#F4F4F4;}
+.numbers .dentro, .socio .dentro{width:100%;height:100%;display:flex;}
+.numbers .dentro .inside, .socio .dentro .inside{position:relative;width:25%;height:100%;}
+.numbers .dentro .inside .words{width:100%;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);box-sizing:border-box;}
+.numbers .dentro .inside .words h4{font-size:25px;text-align:center;font-weight:bold;color:#43CBCB;margin-bottom:30px;}
+.numbers .dentro .inside .words p{font-size:18px;text-align:center;color:#2A2A2A;padding:0px 25px;}
+#socio{width:100%;height:50px;position:relative;background-color:#F1F4F7;}
+#socio p{text-align:center;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(100%);color:#809fc3;font-weight:bold;}
+.socio{width:100%;height:250px;background-color:#F1F4F7;}
+.socio .dentro .inside figure{width:100%;height:100%;position:relative;}
+.socio .dentro .inside figure img{width:200px;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);}
+.goal{width:100%;height:300px;background-image:url(../imagenes/nosotros/goal.jpg);background-size:cover;}
+.goal .rell{width:100%;height:100%;display:flex;}
+.rell .mision{width:50%;height:100%;background:rgba(0,0,0,0.7);position:relative;}
+.rell .vision{width:50%;height:100%;background:rgba(0,154,255,0.6);position:relative;}
+.mision .inside, .vision .inside{width:80%;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);}
+.mision .inside h3, .vision .inside h3{font-size:40px;color:#fff;}
+.vision .inside .line{font-size:30px;line-height:10px;margin-top:-15px;margin-bottom:20px;color:rgb(255,255,255);}
+.mision .inside p{color:#999898;font-size:20px;}
+.vision .inside p{color:#fff;font-size:20px;}
+.phy{width:100%;height:300px;background:#1F2129;}
+.phy .inside{width:100%;height:100%;}
+.phy .inside .cont{margin:auto;width:90%;height:100%;display:flex;flex-wrap:wrap;}
+.phy .inside .title{width:100%;height:40px;}
+.phy .inside .title h3{margin-top:25px;text-align:center;font-size:40px;color:#fff;}
+.phy .inside .simbolo{width:25%;height:160px;}
+.phy .inside .simbolo p{margin:auto;width:110px;height:110px;line-height:85px;border-radius:50%;background-color:rgb(0,154,255);font-size:80px;text-align:center;color:#fff;}
+.phy .inside .texto{width:75%;height:160px;position:relative;}
+.phy .inside .texto p{width:100%;font-size:18px;padding:15px;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);color:#CCBAB3;}
+@media screen and (min-width:768px){.who .img{overflow:hidden;}
+.who .img{overflow:hidden;}
+.who .img img{width:auto;margin-left:-45px;}
+}
+@media screen and (min-width:872px){article .who h3{font-size:35px;}
+article .who p{font-size:18px;}
+.who .img{overflow:hidden;}
+.who .img img{width:auto;margin-left:-25px;}
+}
+@media screen and (min-width:1024px){.who .img img{width:auto;margin-left:-15px;}
+.join .inside .words p{font-size:70px;}
+.numbers .dentro .inside .words h4{font-size:40px;}
+}
+@media screen and (min-width:1150px){.who .img img{width:auto;margin-left:-5px;}
+}
+@media screen and (min-width:1200px){article{width:1200px;}
+.who .img img{width:auto;margin-left:0px;}
+}
+@media screen and (max-width:767px){#cuerpo .who{width:100%;height:inherit;background:#fff;display:flex;flex-wrap:wrap;}
+.who .img{width:100%;height:200px;overflow:hidden;}
+.who .img img{height:auto;margin-top:-60px;}
+.who .p{width:100%;position:relative;}
+.numbers, .socio{height:inherit;}
+.numbers .dentro, .socio .dentro{display:flex;flex-wrap:wrap;}
+.numbers .dentro .inside, .socio .dentro .inside{width:100%;height:170px;}
+.goal{height:inherit;}
+.rell{flex-wrap:wrap;}
+.rell .mision,.rell .vision{width:100%;height:220px;}
+.phy{height:inherit;}
+.phy .inside .cont{flex-wrap:wrap;}
+.phy .inside .title h3{font-size:30px;}
+.phy .inside .simbolo{margin-top:30px;width:100%;height:110px;}
+.phy .inside .texto{width:100%;}
+}
+@media screen and (max-width:600px){.join .inside .words p{font-size:40px;margin-bottom:20px;}
+.join .inside .words a{font-size:14px;padding:5px 15px;}
+#socio p{transform:translateX(-50%) translateY(40%);}
+.mision .inside h3, .vision .inside h3{font-size:30px;}
+.mision .inside p{font-size:16px;}
+.vision .inside p{font-size:16px;}
+.phy .inside .texto{height:180px;font-size:16px;}
+.phy .inside .texto p{font-size:16px;}
+}
+@media screen and (max-width:500px){.who .img img{margin-top:-30px;}
+.join{height:250px;}
+}
+@media screen and (max-width:490px){.who .img img{margin-top:0px;}
+.who .img{height:150px;}
+.who .p .texto{padding:25px;}
+article .who h3{font-size:20px;}
+article .who p{font-size:15px;}
+.phy .inside .texto p{font-size:15px;}
+}
+@media screen and (max-width:350px){.join .inside .words p{font-size:30px;}
+.join .inside .words a{font-size:13px;padding:5px 15px;}
+#socio p{transform:translateX(-50%) translateY(0%);}
+.phy .inside .simbolo p{width:80px;height:80px;line-height:60px;font-size:50px;}
+.phy .inside .texto p{font-size:14px;margin-top:-15px;}
+.phy .inside .title h3{font-size:20px;}
+}
